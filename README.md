@@ -13,7 +13,7 @@
 
 ## Installation
 
-1. Clone or download this repository.
+1. Clone or [download](https://github.com/rodgard/esh/archive/refs/tags/0.1.0.zip) this repository.
 2. Place the extension in the following directory:
 
        ext/rodgard/esh/
