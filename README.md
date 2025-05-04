@@ -31,6 +31,15 @@
 
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
 
+## Third-party components
+
+This extension includes the following third-party component:
+
+- `bbcode.js` from [CodeMirror-modes by rosmanov](https://github.com/rosmanov/CodeMirror-modes),  
+  licensed under the GNU Lesser General Public License v3.0.
+
+See the `styles/all/template/bbcode.js` file for licensing details.
+
 ---
 
 **Author:** [rodgard](https://github.com/rodgard)
