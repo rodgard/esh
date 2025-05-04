@@ -14,5 +14,5 @@ namespace rodgard\esh;
 */
 class ext extends \phpbb\extension\base
 {
-	
+    
 }
