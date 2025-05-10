@@ -3,7 +3,6 @@
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
   font-family: monospace;
-  height: 300px;
   color: black;
   direction: ltr;
   resize: vertical;
@@ -352,6 +351,15 @@ span.CodeMirror-selectedtext { background: none; }
 fieldset.fields1 .CodeMirror div {
   margin-bottom: 0;
 }
+.CodeMirror {
+  height: 300px;
+}
 .CodeMirror-code {
 	min-height: 300px;
+}
+#qr_postform .CodeMirror {
+  height: 150px;
+}
+#qr_postform .CodeMirror-code {
+	min-height: 150px;
 }
