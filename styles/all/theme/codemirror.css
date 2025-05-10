@@ -9,9 +9,6 @@
   resize: vertical;
   outline: 3px dashed transparent;
 }
-.CodeMirror div {
-  margin-bottom: 0 !important;
-}
 
 /* PADDING */
 
@@ -105,7 +102,7 @@
 }
 
 /* DEFAULT THEME */
-
+.cm-s-default { margin-bottom: 0 !important; }
 .cm-s-default .cm-header {color: blue;}
 .cm-s-default .cm-quote {color: #090;}
 .cm-negative {color: #d44;}
@@ -165,7 +162,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}
   /* 50px is the magic margin used to hide the element's real scrollbars */
   /* See overflow: hidden in .CodeMirror */
   margin-bottom: -50px; margin-right: -50px;
-  padding-bottom: 50px;
+  padding-bottom: 50px !important;
   height: 100%;
   outline: none; /* Prevent dragging from highlighting the element */
   position: relative;
@@ -351,3 +348,10 @@ div.CodeMirror-dragcursors {
 
 /* Help users use markselection to safely style text background */
 span.CodeMirror-selectedtext { background: none; }
+
+fieldset.fields1 .CodeMirror div {
+  margin-bottom: 0;
+}
+.CodeMirror-code {
+	min-height: 300px;
+}

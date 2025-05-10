@@ -10,8 +10,8 @@
 namespace rodgard\esh;
 
 /**
-* Extension class for custom enable/disable/purge actions
-*/
+ * Extension class for custom enable/disable/purge actions
+ */
 class ext extends \phpbb\extension\base
 {
     

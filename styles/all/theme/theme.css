@@ -9,11 +9,3 @@
 .CodeMirror.cm-s-default.drag-n-drop-highlight {
     outline-color: rgba(17, 163, 234, 0.5);
 }
-
-.CodeMirror-sizer,
-.CodeMirror-sizer > div,
-.CodeMirror-lines,
-.CodeMirror-lines > div,
-.CodeMirror-code {
-	height: 100%;
-}

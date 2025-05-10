@@ -3672,7 +3672,7 @@
       var totalHeight = measure.viewHeight - (needsH ? sWidth : 0);
       // A bug in IE8 can cause this value to be negative, so guard it.
       this.vert.firstChild.style.height =
-        Math.max(0, measure.scrollHeight - measure.clientHeight + totalHeight) + "px";
+        Math.max(0, measure.scrollHeight - measure.clientHeight + totalHeight - 18) + "px";
     } else {
       this.vert.scrollTop = 0;
       this.vert.style.display = "";
