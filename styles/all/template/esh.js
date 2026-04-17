@@ -8,6 +8,21 @@ if (element && element.tagName.toLowerCase() === 'textarea') {
 		matchBrackets: true,
 		spellcheck: true
 	});
+
+	editor.on("contextmenu", function(cm, e) {
+        var coords = cm.coordsChar({left: e.clientX, top: e.clientY});
+        
+        var isInsideSelection = cm.somethingSelected() && 
+            cm.getSelections().some((sel, i) => {
+                var range = cm.listSelections()[i];
+                return cm.indexFromPos(coords) >= cm.indexFromPos(range.from()) && 
+                       cm.indexFromPos(coords) <= cm.indexFromPos(range.to());
+            });
+
+        if (!isInsideSelection) {
+            cm.setCursor(coords);
+        }
+    });
 }
 
 /**
@@ -74,7 +89,7 @@ function insert_text(text, spaces, popup) {
  */
 function attachInline(index, filename) {
     var doc = editor.getDoc();
-    doc.replaceSelection('[attachment=' + index + ']' + filename + '[/attachment]');
+    doc.replaceSelection('[attachment=' + index + ']' + filename + '[/attachment] ');
     editor.focus();
 }
 
